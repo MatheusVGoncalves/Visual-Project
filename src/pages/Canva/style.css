@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.canva {
+    font-family: Roboto, sans-serif;
+}
+
+/* --------------------------CANVA FORM------------------------------------- */
+
+.canva-form form {
+    padding: 15px 30PX;
+    border-radius: 30px;
+    margin-top: 12px;
+    background-color: #F8F9FA;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px #babecc, -1px -1px 2px #fff
+}
+
+.canva-form legend {
+    font-size: 14px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.canva-form select {
+    height: 3em;
+    width: 70%;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+
+}
+
+.canva-form textarea {
+    resize: none;
+    width: 90%;
+    height: 3em;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    overflow: hidden;
+}
+
+.canva-form Button {
+    align-items: center;
+    height: 90%;
+    margin-top: 3%;
+    border-radius: 50px;
+    background: #100921dc;
+    border: 0;
+    font-size: 12px;
+}
+
+.form-area1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-area {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 1fr;
+}
+
+.form-input ::placeholder {
+    opacity: 0.3;
+    color: #100921dc;
+}
+
+.form-input textarea,
+.form-input select {
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F8F9FA;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.form-input select option {
+    padding: 2px;
+}
+
+
+/* --------------------------CANVA APP------------------------------------- */
+
+/* LAYOUT APP */
+.canva-app {
+    display: grid;
+    grid-template: "a b c d e"
+        "f g h i j"
+        "k g h i j"
+        "k g l l m"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    padding: 20px;
+    gap: 3.5px;
+    height: 120vh;
+    max-height: 900px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #F8F9FA;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.canva-campo {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    overflow: hidden;
+}
+
+.canva-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1.5em;
+    padding-top: 0.7em;
+    padding-left: 0.5em;
+    background: rgba(186, 190, 204, 0.2);
+    border-radius: 5px;
+}
+
+.canva-title h1 {
+    font-size: 13.5px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.justificativa {
+    grid-area: a;
+}
+
+.produto {
+    grid-area: b;
+}
+
+.stakeholders {
+    grid-area: c;
+}
+
+.premissas {
+    grid-area: d;
+}
+
+.riscos {
+    grid-area: e;
+}
+
+.objetivos {
+    grid-area: f;
+}
+
+.requisitos {
+    grid-area: g;
+}
+
+.equipe {
+    grid-area: h;
+}
+
+.entregas {
+    grid-area: i;
+}
+
+.tempo {
+    grid-area: j;
+}
+
+.beneficios {
+    grid-area: k;
+}
+
+.restricoes {
+    grid-area: l;
+}
+
+.custo {
+    grid-area: m;
+}
+
+.canva-justificativa,
+.canva-produto,
+.canva-stakeholders,
+.canva-premissas,
+.canva-riscos,
+.canva-objetivos,
+.canva-requisitos,
+.canva-equipe,
+.canva-entregas,
+.canva-tempo,
+.canva-beneficios,
+.canva-restricoes,
+.canva-custo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* COMPONENTS */
+
+.postIt {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 7px;
+    width: 95%;
+    border-radius: 5px;
+    min-height: 30px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.postIt p {
+    margin: auto 0;
+    padding: 5px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.opcoes {
+    display: none;
+}
+
+.opcoes button {
+    margin-right: 5px;
+    background: transparent;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+}
+
+.disable {
+    display: none !important;
+    z-index: -1;
+}
+
+.disable-text {
+    color: transparent !important;
+}
+
+.enable {
+    display: inline !important;
+    z-index: 0;
+}
+
+
+.postIt:hover .opcoes {
+    display: inline;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+
+.editar-texto {
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    resize: none;
+    position: absolute;
+    width: 95%;
+    height: 80%;
+    left: 5px;
+    top: 5px;
+    background-color: transparent;
+    word-wrap: break-word;
+}
+
+.opcoes-editar {
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+.opcoes-editar button {
+    margin-right: 5px;
+    background: transparent;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+}
+
+.campo:hover {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+
+}
+
+.campo:hover .postIt {
+    min-height: max-content;
+}
+
+.campo {
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+
+
+/* --------------------------CANVA DOWNLOAD------------------------------------- */
+
+.canva-download, 
+.canva-clean{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.canva-download Button {
+    height: 100%;
+    width: 350px;
+    font-size: 18px;
+}
+
+
+
+
+
+/* --------------------------POST IT COLOR------------------------------------- */
+
+.azul {
+    background: rgba(66, 211, 255, 0.5);
+}
+
+.verde {
+    background: rgba(0, 135, 95, 0.5)
+}
+
+.vermelho {
+    background: rgba(232, 63, 91, 0.5)
+}
+
+.laranja {
+    background: rgba(255, 122, 41, 0.5)
+}
+
+.roxo {
+    background: rgba(130, 87, 229, 0.5)
+}
+
+.cinza {
+    background: rgba(225, 225, 230, 1)
+}
+
+/*------------------------------- PRINT ---------------------------------- */
+
+@media print {
+    * {
+        background: transparent;
+        color: #000;
+        text-shadow: none;
+        filter: none;
+        -ms-filter: none;
+    }
+
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .canva-download,
+    .canva-form,
+    #header-navbar,
+    .canva-clean {
+        display: none;
+    }
+
+    .canva-app {
+        max-height: 80vh;
+        min-width: 70vw;
+        background-color: #F8F9FA;
+        grid-template-columns: 1fr 1fr 1.1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0fr 1fr;
+    }
+
+    .postIt {
+        font-size: 10px;
+    }
+
+    .canva-title h1 {
+        font-size: 9px;
+    }
+
+    
+
+
+
+
+
+}

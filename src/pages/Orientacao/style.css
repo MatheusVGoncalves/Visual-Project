@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+.introducao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50PX;
+    font-family: Roboto, sans-serif;
+}
+
+.introducao h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.textoInstrucao{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.instrucao{
+    margin-bottom: 50px;
+}
