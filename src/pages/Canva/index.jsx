@@ -377,7 +377,7 @@ function Canva() {
                         </div>
                         <div className="canva-campo stakeholders">
                             <div className="canva-title">
-                                <h1>🏦 STAKEHOLDERS EXTERNOS</h1>
+                                <h1 id='textMin'>🏦 STAKEHOLDERS EXTERNOS</h1>
                             </div>
                             <div className='campo canva-stakeholders'>
                             {stakeholders.map(({ descricao, area, cor, id }) => (
