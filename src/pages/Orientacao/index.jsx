@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap';
+import orientacao from './img/instrucao.png'
 import './style.css'
 
 function Orientacao() {
@@ -12,7 +13,7 @@ function Orientacao() {
                     <span className='textoInstrucao'>✔️ PARA LIMPAR O CANVA E CRIAR NOVAMENTE, UTILIZE O BOTÃO <strong>"LIMPAR BLOCOS"</strong></span>
                 </div>
                 <div className="instrucao">
-                    <img src="./src/pages/orientacao/img/instrucao.png" alt="Instrução de Preenchimento da Ferramenta" width='100%' />
+                    <img src={orientacao} alt="Instrução de Preenchimento da Ferramenta" width='100%' />
                 </div>
             </Container>
         </>
