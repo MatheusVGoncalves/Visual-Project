@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import imagemMain from './img/home-bg.svg'
 import './style.css'
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
                 <Button className='home-btn' variant="light" size="lg" onClick={startCanva} >CRIE SEU CANVA</Button>
             </div>
             <div className='home-img'>
-                <img src='./src/pages/Home/img/home-bg.svg' /> 
+                <img src={imagemMain} /> 
             </div>
         </div>
         </Container>
