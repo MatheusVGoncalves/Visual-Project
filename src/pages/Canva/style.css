@@ -51,12 +51,6 @@
     font-size: 12px;
 }
 
-.form-area1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .form-area {
     display: grid;
     grid-template-columns: 5fr 2fr 2fr 1fr;
@@ -395,10 +389,61 @@
         font-size: 9px;
     }
 
+}
+
+/*------------------------------- RESPONSIVE ---------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+    .canva-title h1 {
+        font-size: 8px;
+    }
     
+}
 
+@media screen and (max-width: 1024px) {
+    .canva-app {
+        font-size: 10px;
+        display: grid;
+        grid-template: "a b"
+            "c d"
+            "e f"
+            "g h "
+            "i j "
+            "k l "
+            "m m"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 
+    .canva-title{
+        height: 20px;
+    }
 
+    .canva-campo {
+        min-height: 50px;
+    }
 
+    .form-area {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .canva-form form {
+        font-size: 10px;
+    }
+    
+    .canva-form legend{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    .canva-title h1 {
+        font-size: 11px;
+    }
+    
 }
