@@ -393,7 +393,7 @@
 
 /*------------------------------- RESPONSIVE ---------------------------------- */
 
-@media screen and (max-width: 500px) {
+@media (max-width: 600px) {
 
     .canva-title h1 {
         font-size: 8px;

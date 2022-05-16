@@ -56,3 +56,35 @@
     background-color: #100921dc;
 }
 
+/* ---------------------------- RESPONSIVE -------------------------*/
+
+@media (max-width: 1024px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .home-title{
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .home-subtitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+        gap: 10px;
+    }
+
+    .home-main{
+        align-items: center;
+    }
+
+    .home-img{
+        display: none;
+    }
+}

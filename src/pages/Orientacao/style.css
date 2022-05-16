@@ -23,3 +23,16 @@
 .instrucao{
     margin-bottom: 50px;
 }
+
+/*------------------------------- RESPONSIVE ---------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .introducao{
+        font-size: 13px;
+        flex-direction: column;
+    }
+
+    .introducao h1{
+        font-size: 25px;
+    }
+}
