@@ -7,7 +7,7 @@ VISUAL PROJECT
 <p align="center">Website para Criação de Canvas de Projetos</p>
 
 <div>
-  <img src="https://i.ibb.co/sJBQm2L/task-project-gif.gif" alt="demo-web" height="425">
+  <img src="https://user-images.githubusercontent.com/97061067/168892351-7ded3a7e-f111-4df8-8c97-bc076bcbc166.mp4" alt="demo-visualproject" height="425">
 </div>
 
 <hr />
