@@ -7,7 +7,12 @@ VISUAL PROJECT
 <p align="center">Website para Criação de Canvas de Projetos</p>
 
 <div>
-  <img src="https://user-images.githubusercontent.com/97061067/168892351-7ded3a7e-f111-4df8-8c97-bc076bcbc166.mp4" alt="demo-visualproject" height="425">
+  <video src="https://user-images.githubusercontent.com/97061067/168892351-7ded3a7e-f111-4df8-8c97-bc076bcbc166.mp4" alt="demo-visualproject" height="425">
+
+  <video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/97061067/168892351-7ded3a7e-f111-4df8-8c97-bc076bcbc166.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 </div>
 
 <hr />
