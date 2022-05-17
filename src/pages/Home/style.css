@@ -59,7 +59,11 @@
 /* ---------------------------- RESPONSIVE -------------------------*/
 @media (max-width: 600px) {
     .home-subtitle{
-        font-size: 0.5em;
+        font-size: 0.2em;
+    }
+
+    .home-subtitle span{
+        text-align: center;
     }
 
     .home{
